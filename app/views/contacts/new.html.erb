@@ -1,0 +1,12 @@
+<h1> New Contact </h1>
+
+
+#transfer state from one request to the next one
+
+def Create
+ @contact = Contact.new(params["contacts"])
+ @contact.save
+ redirect_to "/companies"
+
+ 
+end
