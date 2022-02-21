@@ -1,4 +1,4 @@
-<ul>
- <% for contact in @company.contacts%>
- <li> <%= contact.last_name %>, <%contact.first_name %> </li>
-</ul>
+<h1> <%= @company.name %></h>
+<h2> <%= @company.city%>, <%= @company.state%> </h2>
+
+<p> <a href = "/companies"> Go back to all companies </p>
